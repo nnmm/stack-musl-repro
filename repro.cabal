@@ -1,0 +1,26 @@
+cabal-version:       3.6
+name:                repro
+version:             0.1.0.0
+synopsis:            unimportant
+description:         unimportant
+license:             MIT
+license-file:        LICENSE
+author:              nnmm
+maintainer:          nnmmgit@gmail.com
+copyright:           2017 Nikolai Morin
+category:            Web
+build-type:          Simple
+
+executable repro
+    main-is:
+        Main.hs
+    build-depends:
+        base >= 4.9 && < 5.0
+    hs-source-dirs:
+        app
+    default-language:
+        Haskell2010
+    ghc-options:
+        -with-rtsopts=-T
+    ld-options:
+        -static -pthread

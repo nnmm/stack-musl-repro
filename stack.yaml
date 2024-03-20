@@ -1,0 +1,8 @@
+flags: {}
+packages:
+- '.'
+resolver: lts-21.16
+# This enables static linking, so that there are no libc problems with the Debian server
+docker:
+  enable: true
+  image: utdemir/ghc-musl:v25-ghc944
